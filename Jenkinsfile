@@ -25,6 +25,7 @@ pipeline {
                 steps {
                    dir('4-python-jenkins-docker-app'){
                    sh 'docker build -t python-jenkins-app:latest .'
+                    sh 'echo "Docker Image Build successfully"'
                    }
                 }
             }
